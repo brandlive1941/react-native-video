@@ -342,6 +342,7 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
             }
         } else {
             if (!mMediaPlayer.isPlaying()) {
+                isCompleted = false;
                 start();
 
                 // Also Start the Progress Update Handler
